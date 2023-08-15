@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-nodejs-app-2xgz
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/e2e-demos-egzg-tenant/nodejs-users/simple-nodejs-app-2xgz@sha256:e88f49bcfd5765ccbda05401299fed71f9f0863f1baff7398cc9f2d092f209b7
+        name: my-nodejs
+        resources: {}
+status: {}
